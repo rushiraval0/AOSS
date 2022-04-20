@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBlue"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:background="@color/colorBlue"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:elevation="10dp"
+            android:text="Donate to NGO"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="login" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="35dp">
+
+
+                        <TextView
+                            android:id="@+id/tvPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ldate"
+                            android:layout_margin="15dp"
+                            android:text="Enter Amount"
+                            android:textColor="@color/colorPurple"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etdesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPhone"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:drawablePadding="30dp"
+                            android:inputType="number"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/etdesc"
+                            android:layout_margin="15dp"
+                            android:inputType="number"
+                            android:text="Card Number"
+                            android:textColor="@color/colorPurple"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etcard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvcard"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:drawablePadding="30dp"
+                            android:inputType="number"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvcvv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/etcard"
+                            android:layout_margin="15dp"
+                            android:inputType="number"
+                            android:text="CVV"
+                            android:textColor="@color/colorPurple"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etcvv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvcvv"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:drawablePadding="30dp"
+                            android:inputType="number"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/etcvv"
+                            android:layout_margin="15dp"
+                            android:inputType="number"
+                            android:text="Valid Till"
+                            android:textColor="@color/colorPurple"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/etd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvd"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:drawablePadding="30dp"
+                            android:inputType="number"
+                            android:padding="10dp" />
+
+                        <Button
+                            android:id="@+id/btpay"
+                            android:layout_width="400dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/etd"
+                            android:layout_marginTop="30dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bt_uisquare"
+                            android:text="Pay"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite" />
+
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

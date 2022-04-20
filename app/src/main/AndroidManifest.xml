@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.engo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/aos"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/aos"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".viewngo"></activity>
+        <activity
+            android:name=".admin"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".viewv" />
+        <activity android:name=".managev" />
+        <activity android:name=".addngo" />
+        <activity android:name=".addevent" />
+        <activity
+            android:name=".ngo_dash"
+            android:label="@string/title_activity_ngo_dash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".editprofile" />
+        <activity android:name=".donation" />
+        <activity android:name=".Display_ngo" />
+        <activity android:name=".add_vol" />
+        <activity android:name=".viewevent" />
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Display_data" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Splash" />
+    </application>
+
+</manifest>
